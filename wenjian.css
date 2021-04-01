@@ -1,0 +1,35 @@
+.box{
+    float: left;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.box-2{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    float: left;
+}
+.box-2>img{
+    margin-top: 10px;
+    width: 90px;
+    height: 60px;
+}
+.box-3{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    float: left;
+}
+.box-3>img{
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
