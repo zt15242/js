@@ -1,12 +1,3 @@
-/**
- *
- * The last time the code was modified time is 2020/9/18 20:10 by Java-1班 刘运
- *
- * 如遇问题可添加以下任意社交账号
- * QQ: 1265894132
- * WX: _zaijiana
- */
-
 var a = 0;
 var b = false;
 var c = 0;
