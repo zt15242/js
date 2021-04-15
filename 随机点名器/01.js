@@ -21,7 +21,7 @@ if (state == 0) {
     var sj = Math.round(Math.random() * (arr.length - 1));
     console.log(arr[sj]);
     box.innerHTML = arr[sj];
-  }, 3)
+  }, 50)
   span.innerHTML = "结束"//更改按钮的内容
   state=1;
 }else{
