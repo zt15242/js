@@ -1,0 +1,23 @@
+var arr = ["张磊","唐诗雨","邓翔","孙浩天","武于伦","林潘东"]
+var box = document.getElementById("box");
+var span = document.getElementById("span");//获取元素
+var state = 0;//定义状态，开始和结束
+var t;
+span.onclick = function () {
+if (state == 0) {
+  //如果是0即开始随机，变为1时结束，不是0时执行else
+  clearInterval(t);
+  t = setInterval(function () {
+    // console.log(1);
+    var sj = Math.round(Math.random() * (arr.length - 1));
+    console.log(arr[sj]);
+    box.innerHTML = arr[sj];
+  }, 3)
+  span.innerHTML = "结束"//更改按钮的内容
+  state=1;
+}else{
+  state=0;
+  clearInterval(t);
+  span.innerHTML = "开始"
+}
+}
