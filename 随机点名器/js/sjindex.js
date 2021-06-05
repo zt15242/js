@@ -29,7 +29,7 @@ var arrName=new Array();
 				console.log(NameList);
 				var bt=window.document.getElementById("bt");
 				if (mytime==null && music==false) {
-					musics.src="./muisc/祖海%20-%20好运来.mp3";
+					musics.src="https://zt15242.github.io/js/%E9%9A%8F%E6%9C%BA%E7%82%B9%E5%90%8D%E5%99%A8/muisc/%E7%A5%96%E6%B5%B7%20-%20%E5%A5%BD%E8%BF%90%E6%9D%A5.mp3";
 					musics.play();
 					 bt.innerHTML="停止";
 					  show();
