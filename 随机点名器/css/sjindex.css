@@ -1,0 +1,45 @@
+.title{
+				width: 10rem;
+				height: 2rem;
+				text-align: center;
+				margin-top: 3.75rem;
+				margin-right: 2rem;
+			}
+			.d1{
+				display:block;
+				width:100%;
+				padding:.375rem .75rem;
+				font-size:1rem;
+				font-weight:400;
+				line-height:1rem;
+				color:white;
+				background-color:#000000;
+				background-clip:padding-box;
+				border:1px solid #000000;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+				appearance:none;
+				border-radius:.25rem;
+				transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+			}
+			body{
+				position: relative;
+			}
+			 #box {
+			    margin: auto;
+			    width: 660px;
+			    font-size: 66px;
+			    height: 94px;
+			    color: #138eee;
+			    text-align: center;
+			    margin-top: 200px;
+			   }   
+			   #bt {
+			    margin: auto;
+			    width: 200px;
+			    text-align: center;
+			    margin-top: 75px;
+			    color: #fff;
+			    font-size: 25px;
+			    cursor: pointer;
+			   }
