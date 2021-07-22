@@ -6,9 +6,7 @@
 		<script type="text/javascript">
 			$(function () {
 				$("a").click(function (event) {
-					event.preventDefault();
 					var hf=$(this).attr("href");
-					console.log(hf);
 					$(this).attr("href","https://www.playm3u8.cn/jiexi.php?url="+hf)
 				})
 			})
