@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#text").keyup(function () {
+				var num=500-$(this).val().length;
+				$("span").html("还能输入："+num+"字")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--
+		    textarea文本域    text文本框 
+			文本框： 不能换行  默认值是书写在value中
+			文本域： 可以换行的，默认值书写在内容体中
+		  -->
+		<!-- <form>
+			<input type="text" name="username" /><br>
+			<textarea rows="8" cols="20" name="text"></textarea>
+			<br>
+			<input type="submit" value="提交" />
+		</form> -->
+		<textarea rows="8" cols="20" id="text" name="text"></textarea><br>
+		<span>还能输入：500字</span>
+	</body>
+</html>
