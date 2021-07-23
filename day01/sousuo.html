@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			.ss{
+				margin: 50% auto;
+				/* border:1px solid #000; */
+				/* width:300px;
+				height:100px; */
+				line-height: 100px;
+			}
+			input{
+				width: 500px;
+				height: 50px;
+			}
+			span{
+				font-size: 50px;
+				font-family:楷体;
+				background: linear-gradient(to bottom,#f0610e, #e8771a, #fff34a);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+		</style>
+		<script src="https://zt15242.github.io/js/day01/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#bu").click(function () {
+					var va=$("#va").val();
+					var pv="https://www.playm3u8.cn/jiexi.php?url="+va;
+					location.href=pv;
+					$("p").html(pv)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="ss">
+			<span>请输入链接</span><br>
+			<input type="text" id="va"/>
+			<input type="button"value="转换链接" id="bu"/>
+			<p></p>
+		</div>
+	</body>
+</html>
