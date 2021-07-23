@@ -54,6 +54,19 @@
                 }
                 $(this).hide();
             })
+            $(document).bind("contextmenu", function () {
+					alert("禁止查看")
+					return false; 
+					});//禁止右键
+				                document.oncontextmenu = function () { return false; };
+				                document.onkeydown = function () {
+				                    if (window.event && window.event.keyCode == 123) {
+				                        event.keyCode = 0;
+				                        event.returnValue = false;
+										alert("禁止查看")
+				                        return false;
+				                    }
+				             }
         })
     </script>
 </head>
@@ -151,15 +164,15 @@
             
             <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/b00391cvf8l.html"> 44 </a></div>
             
-            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/j0039onh6il.html"> 45 </a></div>
+            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/c0039y0frf3.html"> 45 </a></div>
             
-            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/k0039r099nl.html"> 46 </a></div>
+            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/c0039z4uafe.html"> 46 </a></div>
             
-            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/p0039rbz6rv.html"> 47 </a></div>
+            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/i0039au14jq.html"> 47 </a></div>
             
-            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/a0039hyqb2o.html"> 48 </a></div>
+            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/b0039g6q6ob.html"> 48 </a></div>
             
-            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/n0039rnilgn.html"> 49 </a></div>
+            <div class="title"><a href="https://www.playm3u8.cn/jiexi.php?url=https://v.qq.com/x/cover/mzc00200y4wycre/h0039y3jtfi.html"> 49 </a></div>
             
         </div>
    <div class="title-bottom">
