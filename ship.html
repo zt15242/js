@@ -12,8 +12,8 @@
 			border:1px solid red;
 		}
 		.ss{
-			    margin-left: -7px;
-			    width: 100px;
+			    margin-left: -6px;
+			    width: 40px;
 			    height: 34px;
 		}
 		.tit{
@@ -25,25 +25,45 @@
 		$(function () {
 			$(".ss").click(function () {
 			var text=$(".sr").val();
+			var src=$("option:selected").val();
 			// var src= $("#WANG").attr("src","//m3u8.zh188.net/20210508`/playm3u8.php?url="+text);
-				var src= $("#WANG").attr("src","https://www.91jxs.com/jiexi/?url="+text);
+				if (src==0) {
+					alert("请选择线路")
+				}else{
+					var src= $("#WANG").attr("src",src+text);
+				/* 	setInterval(function () {
+						$(".sr").val("")
+					},20000) */
+				}
 			});
+			$(document).bind("contextmenu", function () { return false; });//禁止右键
+			                document.oncontextmenu = function () { return false; };
+			                document.onkeydown = function () {
+			                    if (window.event && window.event.keyCode == 123) {
+			                        event.keyCode = 0;
+			                        event.returnValue = false;
+			                        return false;
+			                    }
+			             }
 		})
 	</script>
 	<body>
+		<select style="float: left;">
+			<option value ="0">--请选择线路--</option>
+			<option value ="https://www.91jxs.com/jiexi/?url=">线路一</option>
+			<option value ="//m3u8.zh188.net/20210508`/playm3u8.php?url=">线路二</option>
+			<option value="https://api.jiexi.la/?url=">线路三</option>
+		</select>
 		<div class="tit">
 			<input type="text" placeholder="输入网址" class="sr"/>
 			<input type="button"value="搜索" class="ss" />
 		</div>
 	  <div>
-	  <!-- 	<iframe id="WANG" scrolling="no" allowfullscreen="true" allowtransparency="true" frameborder="0"
-	  	      src=""
-	  	      width="800" height="500">
-	  	</iframe> -->	
 		<iframe id="WANG"
-		allowfullscreen="true"
+		allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true"
 		src=""
-		width="100%" height="500"
+		style="background-image: url(https://zt15242.github.io/js/imgs/cz.jpg);background-size: 100% 100%;"
+		width="100%" height="600"
 		></iframe>
 	  </div>
 	</body>
