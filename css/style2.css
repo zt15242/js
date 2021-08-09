@@ -1,0 +1,14 @@
+* {margin:0; padding:0}
+body {font:14px Helvetica, sans-serif; font-weight:bold; background:#FFF}
+ul.line{
+	width: 1000px;
+	height: 30px;
+	overflow: hidden;
+	margin-bottom: 20px;
+} 
+ul.line li{height:30px;text-indent:15px; font-size:12px; line-height:30px;list-style:none} 
+span{
+	font-size: 15px;
+	color: yellow;
+	letter-spacing: 10px;
+}
