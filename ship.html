@@ -72,9 +72,15 @@
 				$(".icon-search").css({ left: X, top: Y });
 				$(".icon-search").click(function () {
 					elem.val("");
-					$(this).hide();
+					$(".icon-search").hide();
 				})
 				$(".icon-search").show();
+				$("#WANG").mouseenter(function () {
+						$(".icon-search").hide();
+				})
+				elem.mousedown(function () {
+					$(".icon-search").show();
+				})
 			})
 			$(document).bind("contextmenu", function () { return false; });//禁止右键
 			                document.oncontextmenu = function () { return false; };
