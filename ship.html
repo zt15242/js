@@ -41,6 +41,14 @@
 			line-height: 30px;
 			/* text-align: center; */
 		}
+		.icon-search {
+		        background: url(https://zt15242.github.io/js/imgs/sc.png) no-repeat;
+		        width: 15px;
+		        height: 15px;
+		        position: absolute;
+		        display: block;
+		        cursor: pointer
+		    }
 	</style>
 	<script src="https://zt15242.github.io/js/day01/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
@@ -55,6 +63,19 @@
 					var src= $("#WANG").attr("src",src+text);
 				}
 			});
+			$(".sr").keyup(function () {
+				//要删除的target
+				var elem = $(".sr");
+				var X, Y;
+				X = elem.offset().left + elem[0].offsetWidth - (15 + 5);//距离浏览器左边距离
+				Y = elem.offset().top + ((elem[0].offsetHeight) / 2) - 15 / 2;//距离浏览器上边距离
+				$(".icon-search").css({ left: X, top: Y });
+				$(".icon-search").click(function () {
+					elem.val("");
+					$(this).hide();
+				})
+				$(".icon-search").show();
+			})
 			$(document).bind("contextmenu", function () { return false; });//禁止右键
 			                document.oncontextmenu = function () { return false; };
 			                document.onkeydown = function () {
@@ -88,6 +109,7 @@
 		</select>
 		<div class="tit">
 			<input type="text" placeholder="输入网址" class="sr"/>
+			<i class="icon-search"></i>
 			<input type="button"value="搜索" class="ss" />
 		</div>
 	  <div>
